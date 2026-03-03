@@ -3,7 +3,7 @@ int main() {
 	int array[DEFAULT_SIZE];
 	int length;
 	int number;
-	int n;
+
 	do {
 		system("cls");
 		cout << "Input the size of array: ";
@@ -11,10 +11,11 @@ int main() {
 	} while (length <= 0);
 
 	user_init(array, length);
-	print("\n result:");
+	print("\n result: ");
 
-	bool positive = is_mostly_positive(array, length);
-	string msg =positive?"mostly numbers positive":"mostly numbers not positive";
+	bool smaller = is_smaller_positive(array, length);
+	string msg = smaller ? "smaller part odd" : "smaller part not odd";
+
 	print(msg + ".\n");
 
 	return 0;

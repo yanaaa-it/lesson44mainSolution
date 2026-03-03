@@ -6,4 +6,4 @@
 
 using namespace std;
 
-bool is_mostly_positive(int array[DEFAULT_SIZE], int length);
+bool is_smaller_positive(int array[DEFAULT_SIZE], int length);
