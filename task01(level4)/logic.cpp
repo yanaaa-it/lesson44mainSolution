@@ -11,5 +11,5 @@ int count_positive_numbers(int array[DEFAULT_SIZE], int length) {
 }
 bool is_mostly_positive(int array[DEFAULT_SIZE], int length) {
 	int positive = count_positive_numbers(array, length);
-	return positive>length/2?true:false;
+	return positive>length/2;
 }
